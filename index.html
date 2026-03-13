@@ -8,7 +8,7 @@
 	<head>
 		<title>George Hand Portfolio</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -19,22 +19,35 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<span class="logo"><img src="images/logo.svg" alt="Rocket logo" /></span>
 						<h1>George Hand</h1>
-						<h2>Portfolio</h2>
+						
+						<h2>
+						CompTIA Security+ Certified &nbsp; | &nbsp; Cyber Security
+						</h2>
+
+						<h3>
+						BSc Computer Science, First-Class Honours
+						</h3>
+
+						<p>
+							<br>Hands-on cybersecurity professional skilled in<br>threat detection, attacker simulation, and Windows telemetry.
+						</p>
+
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Unreal Projects</a></li>
-							<li><a href="#second">Tetris</a></li>
-							<li><a href="#third">Space Invaders</a></li>
-							<li><a href="#footer">Contact Me</a></li>
-							<li></li>
-							<li></li><li><a href="https://www.linkedin.com/in/georgehand512" class="icon brands fa-linkedin"><span class="label">GitHub</span></a></li>
-							<li><a href="https://github.com/georgehand512" class="icon brands fa-github"><span class="label">Dribbble</span></a></li>
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="#first">CyberLab</a></li>
+							<li><a href="#second">Experiments</a></li>
+							<!-- READY FORWHEN PYTHON PROJEST IS LIVE <li><a href="#third">Security Project</a></li>   NO YET DONE -->
+							<li><a href="#fourth">Practical Training</a></li>
+							<li><a href="#fifth">Software Development</a></li>
+							<li><a href="#footer">Contact</a></li>
+							<li><a href="https://www.linkedin.com/in/georgehand512" class="icon brands fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/georgehand512" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
 							
 						</ul>
 					</nav>
@@ -46,93 +59,192 @@
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
-
 										
 										<header class="major">
 											<h2>George Hand </h2> 
-											<h4><strong>🎓 First Class Honors in Computer Science </strong></h4>
-										</header>
-										
-										<p>	First-Class Computer Science graduate with a strong technical foundation in software development, debugging, and problem-solving, developed through university study and extensive self-directed learning since graduation.<br>
-											I have hands-on experience working with C++, Python, Git, Visual Studio, and Unreal Engine, using practical projects and engine-based experimentation to explore how complex systems behave, fail, and can be improved. Over the past year, I have focused on strengthening my analytical approach by deliberately testing edge cases, diagnosing issues, and validating fixes within modular codebases.<br>
-											I am particularly interested in roles where attention to detail, logical thinking, and clear communication are essential — including Gaming QA, software testing, and graduate-level software or technology roles. I enjoy working with incomplete or evolving systems, breaking problems down methodically, and collaborating with others to improve quality and reliability.<br>
-											I am now seeking an entry-level or graduate opportunity where I can contribute meaningfully within a team, continue developing professionally, and apply my technical skills in a real production environment.</p>
-										
+											<h4><strong>
+												CompTIA Security+ Certified &nbsp; | &nbsp; Cyber Security<br><br>
+												BSc Computer Science, First-Class Honours 🎓
+											</strong></h4>
+										</header>								
 									</div>
-									<span class="image"><img src="images/George.jpg" alt="" /></span>
+									<span class="image">
+										<img src="images/George.jpg" alt="George Hand profile photo" style="max-width: 100%; height: auto;" />
+									</span>
 								</div>
+								
+								<p>
+									I am a First-Class Computer Science graduate and CompTIA Security+ certified, currently developing practical cyber security capability through structured lab experimentation and hands-on training.
+
+									I independently funded and completed the Security+ certification and built a personal CyberLab environment to continue developing practical security skills beyond formal study.
+
+									CyberLab is a controlled Windows and Kali Linux virtual lab environment used to explore defensive security concepts including network enumeration, authentication monitoring, and Windows event log analysis. Within this environment I design and execute structured experiments that simulate common attacker behaviour, analyse the resulting system telemetry, and identify potential detection opportunities.
+
+									Alongside this practical work, I am progressing through the TryHackMe SOC Level 1 learning path to further strengthen my understanding of security monitoring, alert triage, and incident investigation workflows.
+
+									My goal is to begin my career in cyber security within a defensive or Security Operations role where I can apply strong technical foundations, analytical thinking, and a disciplined approach to security investigation.
+								</p>
+
 							</section>
 
 						<!-- First Section -->
 							<section id="first" class="main special">
-								<header class="major">
-									<h2>Unreal Projects</h2>
-								</header>
+							<header class="major">
+								<h2>CyberLab<br>Detection-Focused Security Environment</h2>
+							</header>
 
-								<h3 style="text-align: left; font-weight: bold;"><b>Crypt Raider</b></h3>
-								<p style="text-align: left;"><span class="image left" style="width: 400px; height: auto;"><img src="images/CryptRaider.gif" alt="" /></span>
-									Crypt Raider is a simple game where players navigate a crypt to steal treasure by solving puzzles, 
-									like placing a statue on a podium to reveal a secret passage. Players avoid traps by swapping objects to escape.
-									The project focuses on key development tasks:							
-									<strong>Level design</strong> with modular assets and Lumen lighting.
-									<strong>Mover component</strong> for door movement.
-									<strong>Grab component</strong> for object interaction via Blueprints.
-									<strong>Pressure plate component</strong> for object-triggers.
-									Utilising essential C++ concepts like pointers, actor components, loops, and calling C++ functions from Blueprints.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/georgehand512/CryptRaider" class="button">Access Code (GitHub)</a></li>
-								</ul>
-					
+							<h3 style="text-align: left; font-weight: bold;"><b>CyberLab Network</b></h3>
 
-								<h3 style="text-align: right; font-weight: bold;"><b>Toon Tanks</b></h3>
-								<p style="text-align: right;"><span class="image right" style="width: 400px; height: auto;"><img src="images/ToonTanks.gif" alt="" /></span>
-									A tank game where players control a blue tank to move, aim, and shoot at enemy turrets that also have basic A.I. 
-									The project covers tank movement, firing projectiles, enemy turrets, health, damage, and destruction mechanics. 
-									It also has special effects like explosions, smoke, and sounds, followed by win/lose conditions with HUD displays. 
-									Focus was on implimenting these features using C++ classes and Unreal Engine's input mappings.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/georgehand512/ToonTanks" class="button">Access Code (GitHub)</a></li>
-								</ul>
+							<p style="text-align: left;">
+								CyberLab is a controlled virtual environment designed to develop and demonstrate practical defensive cyber security skills. The lab consists of a segmented network running Windows 11 and Kali Linux within VirtualBox.
 
+								The environment allows controlled simulation of common attacker activity such as network enumeration, authentication attempts, and service discovery, while observing the resulting system behaviour and logs from a defender’s perspective.
 
-								<h3 style="text-align: left; font-weight: bold;"><b>Simple Shooter</b></h3>
-								<p style="text-align: left;"><span class="image left" style="width: 400px; height: auto;"><img src="images/SimpleShooter.gif" alt="" /></span>
-									A simple shooter game with a fully animated third-person character. 
-									The project covers player movement, aiming, shooting mechanics with particle effects, health, and AI death. 
-									Implementing win/lose conditions, restart levels upon death, and display messages. 
-									Key elements include animation, shooting architecture, enemy AI with behavior trees, and health management for both the player and AI.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/georgehand512/SimpleShooter" class="button">Access Code (GitHub)</a></li>
-								</ul>
-					
-								<h3 style="text-align: right; font-weight: bold;"><b>Slash - Action RPG Style Open World Game</b></h3>
-								<p style="text-align: right;"><span class="image right" style="width: 400px; height: auto;"><img src="images/Slash.gif" alt="" /></span>
-									An Action-RPG Open World game from scratch. Creation of open-world environments, implement enemy AI, combat systems, 
-									and loot mechanics using new UE5 features like Motion Warping, MetaSounds, and Niagara effects. 
-									Covering level design, character movement, weapon systems, health and stamina management, and advanced animation techniques. 
-									Expanding my C++ knowledge, RPG mechanics and the latest Unreal Engine 5 tools for game development.
-								    Also involved using free assets from Epic Store.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/georgehand512/Slash" class="button">Access Code (GitHub)</a></li>
-								</ul>
+								Each experiment follows a structured methodology including defined objectives, controlled execution, evidence collection, and detection analysis. The aim is to develop a practical understanding of how security events appear in system telemetry and how suspicious behaviour can be identified through monitoring and investigation.
+							</p>
 
-								<h3 style="text-align: left; font-weight: bold;"><b>Aura - Gameplay Ability System Project</b></h3>
-								<p style="text-align: left;"><span class="image left" style="width: 400px; height: auto;"><img src="images/Aura.gif" alt="" /></span>
-									A fully-functional, scalable RPG game using the Gameplay Ability System (GAS). 
-									Covering combat, leveling, spells, attributes, UI, enemy AI, and multiplayer mechanics, with a clean, modular codebase split between C++ and Blueprints. 
-									Expanding further my C++ and Unreal Engine experience.</p>
-																	
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://github.com/georgehand512/Aura" class="button">Access Code (GitHub)</a></li>
+							<div style="text-align: left; overflow: auto; margin-bottom: 40px;">
+
+								<span class="image left" style="width: 50%; margin-bottom: 25px;">
+									<img src="images/CyberLabNetwork.png" alt="" style="width: 125%; height: auto;" />
+								</span>
+
+								<div style="margin-left: 55%;">
+									<p style="font-weight: 700; font-size: 1.2em; margin-bottom: 10px;">
+										Key Features
+									</p>
+
+									<ul style="padding-left: 20px;">
+										<li>Segmented Windows and Kali lab network</li>
+										<li>Controlled attacker simulation environment</li>
+										<li>Structured experiment documentation</li>
+										<li>Windows event log analysis and telemetry investigation</li>
+										<li>Snapshot and baseline configuration management</li>
 									</ul>
-								</footer>
-							</section>
+								</div>
+
+							</div>
+
+							<footer class="major" style="margin-top: 30px;">
+								<ul class="actions special">
+									<li><a href="https://github.com/georgehand512/CyberLab" class="button" target="_blank" rel="noopener noreferrer">CyberLab (GitHub)</a></li>
+									<li><a href="https://github.com/georgehand512/CyberLab/blob/main/Development_Roadmap.md" class="button" target="_blank" rel="noopener noreferrer">Development Roadmap (GitHub)</a></li>
+									<li><a href="https://github.com/georgehand512/CyberLab/tree/main/Documentation" class="button" target="_blank" rel="noopener noreferrer">Documentation (GitHub)</a></li>
+									<li><a href="https://github.com/georgehand512/CyberLab/tree/main/Experiments" class="button" target="_blank" rel="noopener noreferrer">All Experiments (GitHub)</a></li>
+								</ul>
+							</footer>
+						</section>
+
+							
 
 						<!-- Second Section -->
 						<section id="second" class="main special">
 							<header class="major">
-								<h2>Tetris</h2>
+								<h2>CyberLab Experiments</h2>
+							</header>
+
+							<!-- Experiment 1 -->
+							<div class="project-subsection" style="margin-bottom: 5em;">
+								<h3 style="text-align: right; font-weight: bold;"><b>Exp_001 Local Enumeration</b></h3>
+								<p style="text-align: right;">
+									<a href="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_001_Local_Enumeration/Screenshots/exp001_step03_nmap_service_scan.png" target="_blank">
+										<span class="image right" style="max-width: 400px; width: 100%; height: auto;">
+											<img src="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_001_Local_Enumeration/Screenshots/exp001_step03_nmap_service_scan.png"
+												alt="Nmap scan results from internal enumeration experiment"
+												style="width: 100%; height: auto;" />
+										</span>
+									</a>
+									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. 
+									Using a Kali Linux attacker system, controlled enumeration was performed against a Windows 11 host inside the isolated 
+									CyberLab network.
+
+									The objective was to identify accessible services and understand how common reconnaissance techniques operate within 
+									an internal environment. The experiment began with host availability verification using ICMP requests, followed by 
+									multiple Nmap scans including TCP SYN scanning, service version detection, and full TCP port enumeration.
+
+									The results revealed several default Windows services accessible within the network and demonstrated how attackers 
+									can gather useful system intelligence without authentication. From a defensive perspective, Windows event logs were 
+									reviewed to determine how much telemetry this activity generated in a default configuration.
+
+									The experiment established a baseline for later experiments by highlighting that basic reconnaissance behaviour 
+									can generate limited high-value alerts without enhanced logging or monitoring systems in place.
+								</p>
+								<div style="text-align: center; margin-top: 1em;">
+									<a href="https://github.com/georgehand512/CyberLab/blob/main/Experiments/exp_001_Local_Enumeration/exp_001_Local_Enumeration.md" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
+								</div>
+							</div>
+
+							<!-- Experiment 2 -->
+							<div class="project-subsection" style="margin-bottom: 5em;">
+								<h3 style="text-align: left; font-weight: bold;"><b>Exp_003 Re-run Enumeration With Logging</b></h3>
+								<p style="text-align: left;">
+									<a href="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_001_Local_Enumeration/Screenshots/exp001_step03_nmap_service_scan.png" target="_blank">
+										<span class="image left" style="max-width: 400px; width: 100%; height: auto;">
+											<img src="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_001_Local_Enumeration/Screenshots/exp001_step03_nmap_service_scan.png"
+												alt="Nmap scan results from internal enumeration experiment"
+												style="width: 100%; height: auto;" />
+										</span>
+									</a>
+									This experiment repeats the internal reconnaissance activity performed in Experiment 001 after enabling enhanced 
+									Windows security logging on the target system. The goal was to evaluate how improved audit policies affect the 
+									visibility of attacker reconnaissance activity.
+
+									The same enumeration process was repeated using ICMP host discovery and multiple Nmap scanning techniques to ensure 
+									that the activity itself remained identical to the baseline experiment. This allowed a direct comparison of the 
+									telemetry generated before and after enabling enhanced logging.
+
+									Following the scans, Windows Event Viewer and firewall logs were examined to identify additional events generated 
+									by the operating system. Enhanced audit configuration resulted in significantly increased visibility of network 
+									connection attempts through Windows Filtering Platform events.
+
+									The experiment demonstrates a key defensive principle: reconnaissance activity that appears benign in a default 
+									configuration can become far more observable when appropriate logging policies and monitoring systems are enabled.
+								</p>
+								<div style="text-align: center; margin-top: 1em;">
+									<a href="https://github.com/georgehand512/CyberLab" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
+								</div>
+							</div>
+
+							<!-- Experiment 3 -->
+							<div class="project-subsection" style="margin-bottom: 5em;">
+								<h3 style="text-align: right; font-weight: bold;"><b>Exp_005 Windows Event Log Deep Dive</b></h3>
+								<p style="text-align: right;">
+									<a href="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_001_Local_Enumeration/Screenshots/exp001_step03_nmap_service_scan.png" target="_blank">
+										<span class="image right" style="max-width: 400px; width: 100%; height: auto;">
+											<img src="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_001_Local_Enumeration/Screenshots/exp001_step03_nmap_service_scan.png"
+												alt="Nmap scan results from internal enumeration experiment"
+												style="width: 100%; height: auto;" />
+										</span>
+									</a>
+									This experiment focuses on structured analysis of Windows Security Event Logs generated during previous CyberLab 
+									activities. The exercise simulates the investigative workflow performed by Security Operations Center analysts 
+									when analysing authentication and network activity within enterprise environments.
+
+									Using Windows Event Viewer, authentication-related events and network telemetry were examined in detail. 
+									Particular attention was given to Event ID 4625 (failed logon attempts) as well as network filtering events 
+									recorded during earlier reconnaissance and authentication testing.
+
+									The analysis involved filtering and inspecting event metadata including source network address, account name, 
+									logon type, and failure reason. By examining these attributes, the experiment demonstrates how analysts can 
+									trace suspicious activity and attribute behaviour to specific systems within a network.
+
+									This exercise highlights the importance of understanding Windows event structures and demonstrates how detailed 
+									system telemetry can support threat detection, forensic analysis, and incident investigation workflows.
+								</p>
+								<div style="text-align: center; margin-top: 1em;">
+									<a href="https://github.com/georgehand512/CyberLab" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
+								</div>
+							</div>
+
+							<footer class="major">					
+							</footer>
+						</section>
+
+						<!-- Third Section -->
+						<!-- UNCOMMENT ONCE PROJECT IS DONE & READY TO SHARE
+						<section id="third" class="main special">
+							<header class="major">
+								<h2>Security Project</h2>
 							</header>
 
 							<div class="box alt">
@@ -158,10 +270,38 @@
 							</footer>
 						</section>
 
-						<!-- Third Section -->
-							<section id="third" class="main special">
+						UNCOMMENT HERE ONCE PROJECT IS DONE & READY TO SHARE -->
+
+						<!-- Fourth Section -->
+						<section id="fourth" class="main special">
+							<header class="major">
+								<h2>Practical Training</h2>
+							</header>
+
+							<h3 style="text-align:left;"><b>TryHackMe</b></h3>
+
+							<div class="content">
+								<p style="text-align: left;">
+									I am actively developing practical cyber security skills through the TryHackMe platform. I have completed the Cyber Security 101 course and am currently progressing through the SOC Level 1 learning path.
+
+									My focus is on developing a strong understanding of the material and applying it through hands-on exercises rather than simply completing tasks quickly. This approach has strengthened my knowledge of network security, threat monitoring, and incident investigation techniques.
+
+									Through these labs I continue to develop the analytical thinking and problem-solving skills required within a real-world Security Operations environment, while reinforcing the concepts explored within my CyberLab experiments.
+								</p>
+							</div>
+
+							<div class="box alt" style="text-align: center;">
+								<img src="images/THM_horizontal.png" alt="TryHackMe Progress" style="display: block; margin: 0 auto; max-width: 100%; height: auto;">
+							</div>
+
+							<footer class="major">
+							</footer>
+						</section>
+
+						<!-- Fifth Section -->
+							<section id="fifth" class="main special">
 								<header class="major">
-									<h2>Space Invaders</h2>
+									<h2>Software Development</h2>
 								</header>
 
 								<div class="box alt">
@@ -174,17 +314,35 @@
 
 								<div class="content">
 								</header>
-								<p>Star Wars inspired take on the classic Space Invaders game.
-									This was my first attempt at coding any game in any lanuage.
-									It's programmed in Python using Pygame library.
-								</p>
+								 <p style="text-align: left;">
+									My academic background in Computer Science provided a strong foundation in software engineering 
+									and programming. Through coursework and personal projects I developed applications in Python 
+									and C++, building experience with program structure, debugging, memory management, and system 
+									behaviour.
+
+									These development skills now support my cyber security work by enabling me to understand how 
+									software behaves internally, analyse system logs, and develop small tools to assist with 
+									security investigation and automation.
+
+									One example project involved developing a Python application using the Pygame library. 
+									The project required implementing structured program logic, event handling, object 
+									management, and debugging techniques. This work strengthened my Python programming 
+									skills which are now being applied to security-focused projects such as log analysis 
+									and automation tools.
+								 </p>
+								 <p style="text-align: left;">
+									In addition to Python, I have experience developing software in C++, which strengthened 
+									my understanding of memory management, pointers, and program execution at a lower level. 
+									This knowledge is valuable when analysing how software interacts with system resources 
+									and when understanding the technical causes of many security vulnerabilities.
+								 </p>
 							</div>
 
 
 
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="https://github.com/georgehand512/Space-Invaders" class="button">Access Code (GitHub)</a></li>
+										<li><a href="https://github.com/georgehand512/Space-Invaders" class="button" target="_blank">View Project Repository (GitHub)</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -193,26 +351,33 @@
 
 				<!-- Footer -->
 					<footer id="footer">
+
+						
 						<section>
 							<h2>Contact</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>Clitheroe &bull; Lancashire, UK</dd><br />
+								<dt>Location</dt>
+								<dd>Clitheroe &bull; Lancashire &bull; UK</dd><br />
 								<dt>Email</dt>
-								<dd><a href="hand.g@outlook.com">hand.g@outlook.com</a></dd>
+								<dd><a href="mailto:hand.g@outlook.com" target="_blank" rel="noopener noreferrer">hand.g@outlook.com</a></dd>
 							</dl>
 						</section>
 						<section>
-								<ul class="icons"><br /><br />
-								<li><a href="https://www.linkedin.com/in/georgehand512" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<a href="https://www.linkedin.com/in/georgehand512">George Hand@linkedin.com</a>
+								<h3> <br /></h3> <!-- This line is just added to even up the address and email info to LinkedIn and Github icons  -->
+								<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/georgehand512" class="icon brands fa-linkedin alt" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
+								<a href="https://www.linkedin.com/in/georgehand512" target="_blank" rel="noopener noreferrer">George Hand@linkedin.com</a>
 								<br /><br />
-								<li><a href="https://github.com/georgehand512" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<a href="https://github.com/georgehand512">georgehand512@github.com</a>
+								<li><a href="https://github.com/georgehand512" class="icon brands fa-github alt" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+								<a href="https://github.com/georgehand512" target="_blank" rel="noopener noreferrer">georgehand512@github.com</a>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: George Hand using <a href="https://html5up.net"> HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Untitled. Design: George Hand using <a href="https://html5up.net" target="_blank" rel="noopener noreferrer"> HTML5 UP</a>.</p>
 					</footer>
+
+					
+
+					
 
 			</div>
 
