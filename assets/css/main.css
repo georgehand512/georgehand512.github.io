@@ -3857,3 +3857,39 @@ input, select, textarea {
         white-space: normal;
     }
 }
+
+
+.network-section{
+    display:flex;
+    gap:2rem;
+    align-items:flex-start;
+    margin-bottom:40px;
+}
+
+.network-image{
+    flex:1;
+}
+
+.network-image img{
+    width:100%;
+    height:auto;
+}
+
+.network-features{
+    flex:1;
+}
+
+.feature-title{
+    font-weight:700;
+    font-size:1.2em;
+    margin-bottom:10px;
+}
+
+/* Mobile layout */
+@media (max-width:768px){
+
+    .network-section{
+        flex-direction:column;
+    }
+
+}
