@@ -3780,3 +3780,80 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* Mobile fix for CyberLab network diagram */
+
+@media screen and (max-width: 736px) {
+
+    #first .image.left {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    #first .image.left img {
+        width: 100% !important;
+    }
+
+}
+
+/* Mobile fix for CyberLab network diagram */
+
+@media screen and (max-width: 736px) {
+
+    #first .image.left {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    #first .image.left img {
+        width: 100% !important;
+    }
+
+    #first div[style*="margin-left: 55%"] {
+        margin-left: 0 !important;
+    }
+
+}
+
+/* Mobile layout fix for experiment images */
+
+@media screen and (max-width: 736px) {
+
+    #second .image.left,
+    #second .image.right {
+        float: none !important;
+        display: block;
+        margin: 0 auto 20px auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+}
+
+/* Mobile navigation adjustments */
+
+@media screen and (max-width: 736px) {
+
+    /* Make nav items stack vertically */
+    #nav ul li {
+        display: block !important;
+        width: 100% !important;
+        text-align: center;
+        margin: 0.5em 0;
+    }
+
+    /* Ensure icons scale */
+    #nav ul li a.icon {
+        font-size: 1.5em !important;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    /* Prevent text overflow for labels */
+    #nav ul li a span.label {
+        display: block;
+        font-size: 0.9em;
+        white-space: normal;
+    }
+}
