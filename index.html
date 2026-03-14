@@ -155,20 +155,11 @@
 												style="width: 100%; height: auto;" />
 										</span>
 									</a>
-									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. 
-									Using a Kali Linux attacker system, controlled enumeration was performed against a Windows 11 host inside the isolated 
-									CyberLab network.
+									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. Using a Kali Linux attacker system, controlled enumeration was performed against a Windows 11 host inside the isolated CyberLab network.
 
-									The objective was to identify accessible services and understand how common reconnaissance techniques operate within 
-									an internal environment. The experiment began with host availability verification using ICMP requests, followed by 
-									multiple Nmap scans including TCP SYN scanning, service version detection, and full TCP port enumeration.
-
-									The results revealed several default Windows services accessible within the network and demonstrated how attackers 
-									can gather useful system intelligence without authentication. From a defensive perspective, Windows event logs were 
-									reviewed to determine how much telemetry this activity generated in a default configuration.
-
-									The experiment established a baseline for later experiments by highlighting that basic reconnaissance behaviour 
-									can generate limited high-value alerts without enhanced logging or monitoring systems in place.
+									The objective was to identify accessible services and understand how common reconnaissance techniques operate within an internal environment. The experiment began with host availability verification using ICMP requests, followed by multiple Nmap scans including TCP SYN scanning, service version detection, and full TCP port enumeration.
+									
+									The results showed that, by default, Windows 11 blocks incoming ports and services are largely inaccessible. Default security logging generated minimal telemetry, providing almost no insight into the reconnaissance activity. This establishes a baseline for later experiments, highlighting the need for enhanced logging and monitoring to detect even basic attacker behavior.
 								</p>
 								<div style="text-align: center; margin-top: 1em;">
 									<a href="https://github.com/georgehand512/CyberLab/blob/main/Experiments/exp_001_Local_Enumeration/exp_001_Local_Enumeration.md" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
