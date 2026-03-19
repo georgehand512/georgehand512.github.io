@@ -3858,55 +3858,46 @@ input, select, textarea {
     }
 }
 
-
-.network-section{
-    display:flex;
-    gap:2rem;
-    align-items:flex-start;
-    margin-bottom:40px;
-}
-
-.network-image{
-    flex:1;
-}
-
-.network-image img{
-    width:100%;
-    height:auto;
-}
-
-.network-features{
-    flex:1;
-}
-
-.feature-title{
-    font-weight:700;
-    font-size:1.2em;
-    margin-bottom:10px;
-}
-
-/* Mobile layout */
-@media (max-width:768px){
-
-    .network-section{
-        flex-direction:column;
-    }
-
-}
-
+/* Network section layout */
 .network-section {
-    display: flex;       /* side-by-side on desktop */
-    gap: 2rem;           /* spacing between image and features */
-    flex-wrap: wrap;     /* stack on mobile */
-    align-items: flex-start; /* align text at top of image */
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
-.network-features {
-    text-align: left;    /* fixes bullet text alignment */
-    flex: 1;             /* allows list to take available space */
+.network-image {
+    flex: 1;
 }
 
 .network-image img {
-    max-width: 100%;     /* keeps image responsive */
+    width: 100%;
     height: auto;
+}
+
+.network-features {
+    flex: 1;
+    text-align: left;  /* ensures all text inside is left-aligned */
+}
+
+/* Feature title styling */
+.feature-title {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Bullet list styling inside network-features */
+.network-features ul {
+    padding-left: 1.2em;   /* proper bullet indentation */
+    margin-left: 0;         /* remove unwanted margin that can center list */
+    text-align: left;       /* force bullet text left-aligned */
+    list-style-position: outside; /* bullets sit outside text block */
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .network-section {
+        flex-direction: column;  /* stack image + features vertically */
+    }
 }
