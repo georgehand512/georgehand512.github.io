@@ -158,10 +158,10 @@
 										</span>
 									</a>
 									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. 
-									Using a Kali Linux attacker system, controlled enumeration was conducted against a Windows 11 host inside an isolated CyberLab environment.<br>
+									Using a Kali Linux attacker system, controlled enumeration was conducted against a Windows 11 host inside an isolated CyberLab environment.<br><br>
 									
 									The objective was to identify exposed services and understand how standard reconnaissance techniques behave within an internal network. 
-									The process included host discovery via ICMP, followed by TCP SYN scanning, service version detection, and full port enumeration using Nmap.<br>
+									The process included host discovery via ICMP, followed by TCP SYN scanning, service version detection, and full port enumeration using Nmap.<br><br>
 									
 									Results showed that the default Windows 11 configuration effectively blocks unsolicited inbound connections, with all scanned ports appearing filtered. 
 									However, despite this defensive posture, Windows generated minimal security telemetry, providing little to no visibility of the reconnaissance activity. 
@@ -175,7 +175,7 @@
 							<!-- Experiment 2 -->
 							<div class="project-subsection" style="margin-bottom: 5em;">
 								<h3 style="text-align: left; font-weight: bold;"><b>Exp_003 Re-run Enumeration With Logging</b></h3>
-								<p style="text-align: left;">
+								<p style="text-align: right;">
 									<a href="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_003_Re-run_Enumeration_With_Logging/Screenshots/exp003_step06_windows_port_connection.png" target="_blank">
 										<span class="image left" style="max-width: 400px; width: 100%; height: auto;">
 											<img src="https://raw.githubusercontent.com/georgehand512/CyberLab/main/Experiments/exp_003_Re-run_Enumeration_With_Logging/Screenshots/exp003_step06_windows_port_connection.png"
@@ -184,10 +184,10 @@
 										</span>
 									</a>
 									This experiment repeats the internal reconnaissance activity performed in Experiment 001 after enabling enhanced Windows security logging on the target system. 
-									The goal was to evaluate how improved audit policies impact the visibility of attacker reconnaissance.<br>
+									The goal was to evaluate how improved audit policies impact the visibility of attacker reconnaissance.<br><br>
 									
 									The same enumeration techniques were executed—ICMP host discovery and multiple Nmap scans—to ensure a direct comparison with the baseline. 
-									This controlled approach isolates logging as the only variable, allowing accurate measurement of telemetry differences.<br>
+									This controlled approach isolates logging as the only variable, allowing accurate measurement of telemetry differences.<br><br>
 									
 									Analysis of Windows Event Viewer and firewall logs showed a significant increase in visibility. 
 									Network activity that previously generated no observable events now produced detailed Windows Filtering Platform logs, capturing both allowed and blocked connection attempts.<br>
@@ -211,10 +211,10 @@
 										</span>
 									</a>
 									This experiment focuses on structured analysis of Windows Security Event Logs generated during previous CyberLab activities, particularly authentication and network events from controlled testing. 
-									It simulates the investigative workflow of a Security Operations Center (SOC) analyst reviewing historical logs during a potential incident.<br>
+									It simulates the investigative workflow of a Security Operations Center (SOC) analyst reviewing historical logs during a potential incident.<br><br>
 
 									Using Windows Event Viewer, key events such as failed logons (Event ID 4625), successful logons (4624), and network filtering events (5156/5157) were analysed in detail. 
-									The analysis focused on extracting and interpreting critical metadata including source IP address, account name, logon type, and failure reason.<br>
+									The analysis focused on extracting and interpreting critical metadata including source IP address, account name, logon type, and failure reason.<br><br>
 
 									By correlating these fields across multiple events, the experiment demonstrates how suspicious activity—such as repeated failed authentication attempts—can be identified, attributed to a specific host, and contextualised within broader system activity.<br>
 
