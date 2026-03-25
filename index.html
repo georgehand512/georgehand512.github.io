@@ -99,11 +99,13 @@
 							<h3 style="text-align: left; font-weight: bold;"><b>CyberLab Network</b></h3>
 
 							<p style="text-align: left;">
-								CyberLab is a controlled virtual environment designed to develop and demonstrate practical defensive cyber security skills. The lab consists of a segmented network running Windows 11 and Kali Linux within VirtualBox.
+								CyberLab is a controlled virtual environment designed to develop and demonstrate practical defensive cyber security skills. 
+								The lab consists of a segmented network running Windows 11 and Kali Linux within VirtualBox.
 
 								The environment allows controlled simulation of common attacker activity such as network enumeration, authentication attempts, and service discovery, while observing the resulting system behaviour and logs from a defender’s perspective.
 
-								Each experiment follows a structured methodology including defined objectives, controlled execution, evidence collection, and detection analysis. The aim is to develop a practical understanding of how security events appear in system telemetry and how suspicious behaviour can be identified through monitoring and investigation.
+								Each experiment follows a structured methodology including defined objectives, controlled execution, evidence collection, and detection analysis. 
+								The aim is to develop a practical understanding of how security events appear in system telemetry and how suspicious behaviour can be identified through monitoring and investigation.
 							</p>
 
 							<div class="network-section">
@@ -155,11 +157,15 @@
 												style="width: 100%; height: auto;" />
 										</span>
 									</a>
-									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. Using a Kali Linux attacker system, controlled enumeration was performed against a Windows 11 host inside the isolated CyberLab network.
-
-									The objective was to identify accessible services and understand how common reconnaissance techniques operate within an internal environment. The experiment began with host availability verification using ICMP requests, followed by multiple Nmap scans including TCP SYN scanning, service version detection, and full TCP port enumeration.
+									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. 
+									Using a Kali Linux attacker system, controlled enumeration was conducted against a Windows 11 host inside an isolated CyberLab environment.
 									
-									The results showed that, by default, Windows 11 blocks incoming ports and services are largely inaccessible. Default security logging generated minimal telemetry, providing almost no insight into the reconnaissance activity. This establishes a baseline for later experiments, highlighting the need for enhanced logging and monitoring to detect even basic attacker behavior.
+									The objective was to identify exposed services and understand how standard reconnaissance techniques behave within an internal network. 
+									The process included host discovery via ICMP, followed by TCP SYN scanning, service version detection, and full port enumeration using Nmap.
+									
+									Results showed that the default Windows 11 configuration effectively blocks unsolicited inbound connections, with all scanned ports appearing filtered. 
+									However, despite this defensive posture, Windows generated minimal security telemetry, providing little to no visibility of the reconnaissance activity. 
+									This establishes a baseline for subsequent experiments, demonstrating that attack activity can occur with limited detection unless logging and monitoring are explicitly configured.
 								</p>
 								<div style="text-align: center; margin-top: 1em;">
 									<a href="https://github.com/georgehand512/CyberLab/blob/main/Experiments/exp_001_Local_Enumeration/exp_001_Local_Enumeration.md" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
@@ -177,20 +183,16 @@
 												style="width: 100%; height: auto;" />
 										</span>
 									</a>
-									This experiment repeats the internal reconnaissance activity performed in Experiment 001 after enabling enhanced 
-									Windows security logging on the target system. The goal was to evaluate how improved audit policies affect the 
-									visibility of attacker reconnaissance activity.
-
-									The same enumeration process was repeated using ICMP host discovery and multiple Nmap scanning techniques to ensure 
-									that the activity itself remained identical to the baseline experiment. This allowed a direct comparison of the 
-									telemetry generated before and after enabling enhanced logging.
-
-									Following the scans, Windows Event Viewer and firewall logs were examined to identify additional events generated 
-									by the operating system. Enhanced audit configuration resulted in significantly increased visibility of network 
-									connection attempts through Windows Filtering Platform events.
-
-									The experiment demonstrates a key defensive principle: reconnaissance activity that appears benign in a default 
-									configuration can become far more observable when appropriate logging policies and monitoring systems are enabled.
+									This experiment repeats the internal reconnaissance activity performed in Experiment 001 after enabling enhanced Windows security logging on the target system. 
+									The goal was to evaluate how improved audit policies impact the visibility of attacker reconnaissance.
+									
+									The same enumeration techniques were executed—ICMP host discovery and multiple Nmap scans—to ensure a direct comparison with the baseline. 
+									This controlled approach isolates logging as the only variable, allowing accurate measurement of telemetry differences.
+									
+									Analysis of Windows Event Viewer and firewall logs showed a significant increase in visibility. 
+									Network activity that previously generated no observable events now produced detailed Windows Filtering Platform logs, capturing both allowed and blocked connection attempts.
+									
+									This experiment demonstrates a key defensive principle: reconnaissance activity remains technically unchanged, but becomes highly observable when appropriate logging and monitoring are enabled, reinforcing the importance of audit configuration in detection capability.
 								</p>
 								<div style="text-align: center; margin-top: 1em;">
 									<a href="https://github.com/georgehand512/CyberLab/blob/main/Experiments/exp_003_Re-run_Enumeration_With_Logging/exp_003_Re-run_Enumeration_With_Logging.md" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
@@ -208,20 +210,15 @@
 												style="width: 100%; height: auto;" />
 										</span>
 									</a>
-									This experiment focuses on structured analysis of Windows Security Event Logs generated during previous CyberLab 
-									activities. The exercise simulates the investigative workflow performed by Security Operations Center analysts 
-									when analysing authentication and network activity within enterprise environments.
+									This experiment focuses on structured analysis of Windows Security Event Logs generated during previous CyberLab activities, particularly authentication and network events from controlled testing. 
+									It simulates the investigative workflow of a Security Operations Center (SOC) analyst reviewing historical logs during a potential incident.
 
-									Using Windows Event Viewer, authentication-related events and network telemetry were examined in detail. 
-									Particular attention was given to Event ID 4625 (failed logon attempts) as well as network filtering events 
-									recorded during earlier reconnaissance and authentication testing.
+									Using Windows Event Viewer, key events such as failed logons (Event ID 4625), successful logons (4624), and network filtering events (5156/5157) were analysed in detail. 
+									The analysis focused on extracting and interpreting critical metadata including source IP address, account name, logon type, and failure reason.
 
-									The analysis involved filtering and inspecting event metadata including source network address, account name, 
-									logon type, and failure reason. By examining these attributes, the experiment demonstrates how analysts can 
-									trace suspicious activity and attribute behaviour to specific systems within a network.
+									By correlating these fields across multiple events, the experiment demonstrates how suspicious activity—such as repeated failed authentication attempts—can be identified, attributed to a specific host, and contextualised within broader system activity.
 
-									This exercise highlights the importance of understanding Windows event structures and demonstrates how detailed 
-									system telemetry can support threat detection, forensic analysis, and incident investigation workflows.
+									This experiment highlights the transition from generating telemetry to operationalising it for detection and investigation, reinforcing how structured log analysis supports threat detection, incident response, and SOC decision-making.
 								</p>
 								<div style="text-align: center; margin-top: 1em;">
 									<a href="https://github.com/georgehand512/CyberLab/blob/main/Experiments/exp_005_Windows_Event_Log_Deep_Dive/exp_005_Windows_Event_Log_Deep_Dive.md" class="button" target="_blank" rel="noopener noreferrer">View Full Technical Report (GitHub)</a>
