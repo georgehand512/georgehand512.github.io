@@ -158,10 +158,10 @@
 										</span>
 									</a>
 									This experiment simulates the early stages of an internal attacker performing reconnaissance within a segmented network. 
-									Using a Kali Linux attacker system, controlled enumeration was conducted against a Windows 11 host inside an isolated CyberLab environment.
+									Using a Kali Linux attacker system, controlled enumeration was conducted against a Windows 11 host inside an isolated CyberLab environment.<br>
 									
 									The objective was to identify exposed services and understand how standard reconnaissance techniques behave within an internal network. 
-									The process included host discovery via ICMP, followed by TCP SYN scanning, service version detection, and full port enumeration using Nmap.
+									The process included host discovery via ICMP, followed by TCP SYN scanning, service version detection, and full port enumeration using Nmap.<br>
 									
 									Results showed that the default Windows 11 configuration effectively blocks unsolicited inbound connections, with all scanned ports appearing filtered. 
 									However, despite this defensive posture, Windows generated minimal security telemetry, providing little to no visibility of the reconnaissance activity. 
@@ -184,13 +184,13 @@
 										</span>
 									</a>
 									This experiment repeats the internal reconnaissance activity performed in Experiment 001 after enabling enhanced Windows security logging on the target system. 
-									The goal was to evaluate how improved audit policies impact the visibility of attacker reconnaissance.
+									The goal was to evaluate how improved audit policies impact the visibility of attacker reconnaissance.<br>
 									
 									The same enumeration techniques were executed—ICMP host discovery and multiple Nmap scans—to ensure a direct comparison with the baseline. 
-									This controlled approach isolates logging as the only variable, allowing accurate measurement of telemetry differences.
+									This controlled approach isolates logging as the only variable, allowing accurate measurement of telemetry differences.<br>
 									
 									Analysis of Windows Event Viewer and firewall logs showed a significant increase in visibility. 
-									Network activity that previously generated no observable events now produced detailed Windows Filtering Platform logs, capturing both allowed and blocked connection attempts.
+									Network activity that previously generated no observable events now produced detailed Windows Filtering Platform logs, capturing both allowed and blocked connection attempts.<br>
 									
 									This experiment demonstrates a key defensive principle: reconnaissance activity remains technically unchanged, but becomes highly observable when appropriate logging and monitoring are enabled, reinforcing the importance of audit configuration in detection capability.
 								</p>
@@ -211,12 +211,12 @@
 										</span>
 									</a>
 									This experiment focuses on structured analysis of Windows Security Event Logs generated during previous CyberLab activities, particularly authentication and network events from controlled testing. 
-									It simulates the investigative workflow of a Security Operations Center (SOC) analyst reviewing historical logs during a potential incident.
+									It simulates the investigative workflow of a Security Operations Center (SOC) analyst reviewing historical logs during a potential incident.<br>
 
 									Using Windows Event Viewer, key events such as failed logons (Event ID 4625), successful logons (4624), and network filtering events (5156/5157) were analysed in detail. 
-									The analysis focused on extracting and interpreting critical metadata including source IP address, account name, logon type, and failure reason.
+									The analysis focused on extracting and interpreting critical metadata including source IP address, account name, logon type, and failure reason.<br>
 
-									By correlating these fields across multiple events, the experiment demonstrates how suspicious activity—such as repeated failed authentication attempts—can be identified, attributed to a specific host, and contextualised within broader system activity.
+									By correlating these fields across multiple events, the experiment demonstrates how suspicious activity—such as repeated failed authentication attempts—can be identified, attributed to a specific host, and contextualised within broader system activity.<br>
 
 									This experiment highlights the transition from generating telemetry to operationalising it for detection and investigation, reinforcing how structured log analysis supports threat detection, incident response, and SOC decision-making.
 								</p>
